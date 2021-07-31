@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #33263a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 9px 9px 34px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 9px 34px 8px rgba(0,0,0,0.75);
+    box-shadow: 9px 9px 34px 8px rgba(0,0,0,0.75);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 25px;
+}
+
+header > h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+header > img {
+    border-radius: 75px;
+    border: 1px solid black;
+    margin-right: 40px;
+}
+
+#conteiner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+#conteiner > div {
+    width: 50%;
+}
+
+#social > h2{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+#social > a{
+    margin-right: 20px;
+}
+
+#description {
+    width: 60%;
+    height: 100%;
+}
+
+#description > h2{
+    width: 100%;
+    text-align: center;
+}
+
+#description > p{
+    width: 100%;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 800px){
+    header {
+        flex-direction: column-reverse;
+    }
+
+    header > img {
+        max-width: 100px;
+        max-height: 100px;
+        margin: 0;
+    }
+
+    header > h1 {
+        padding-top: 15px;
+        font-size: 20px;
+    }
+
+    section {
+        height: auto;
+    }
+
+    #container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    #description > h2{
+    font-size: 18px;
+    }
+
+    #description > p{
+        font-size: 14px;
+        }
+
+    #social > h2{
+        font-size: 18px;
+    }
+
+    #social {
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;      
+    }
+
+    #social a {
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+}
+
